@@ -1,0 +1,89 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        #navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #welcome-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+        }
+
+        #welcome-section h1 {
+            font-size: 3em;
+        }
+
+        #projects {
+            padding: 2em;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        .project-tile {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 1em auto;
+            padding: 1em;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-tile h3 {
+            margin-top: 0;
+        }
+
+        .project-tile a {
+            display: block;
+            margin-top: 1em;
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 600px) {
+            #navbar ul li {
+                display: block;
+                margin: 0.5em 0;
+            }
+
+            #welcome-section h1 {
+                font-size: 2em;
+            }
+        }
